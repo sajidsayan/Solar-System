@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <title>Solar System</title>
+    <style>
+        body {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .solar-system {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+        }
+        .sun {
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px yellow;
+        }
+        .orbit {
+            position: absolute;
+            border: 1px dashed white;
+            border-radius: 50%;
+        }
+        .planet {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .mercury { background-color: gray; animation: orbit 3s linear infinite; }
+        .venus { background-color: orange; animation: orbit 6s linear infinite; }
+        .earth { background-color: rgb(13, 202, 114); animation: orbit 9s linear infinite; }
+        .mars { background-color: red; animation: orbit 12s linear infinite; }
+
+        @keyframes orbit {
+            0% { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+        }
+
+		.webg-solar{
+			margin-top: -150px;
+		}
+    </style>
+</head>
+<body>
+    <h1>Solar System</h1>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit" style="width: 100px; height: 100px;">
+            <div class="planet mercury"></div>
+        </div>
+        <div class="orbit" style="width: 150px; height: 150px;">
+            <div class="planet venus"></div>
+        </div>
+        <div class="orbit" style="width: 200px; height: 200px;">
+            <div class="planet earth"></div>
+        </div>
+        <div class="orbit" style="width: 250px; height: 250px;">
+            <div class="planet mars"></div>
+        </div>
+    </div>
+	<div class="webg-solar">
+		<h3>
+			The solar system is a vast and fascinating system with the Sun at its center, surrounded by a variety of celestial bodies, including planets, moons, asteroids, comets, and dwarf planets. It formed about 4.6 billion years ago from a giant cloud of gas and dust known as a solar nebula. The force of gravity pulled the materials together, creating the Sun, while the remaining matter clumped together to form planets and other objects.
+
+The solar system consists of eight planets that orbit the Sun. The four inner planets—Mercury, Venus, Earth, and Mars—are rocky and smaller in size, while the four outer planets—Jupiter, Saturn, Uranus, and Neptune—are much larger and made mostly of gas and ice. Apart from planets, the solar system contains dwarf planets like Pluto, Ceres, and Eris, as well as thousands of asteroids and icy comets.
+
+Beyond Neptune lies the Kuiper Belt, a region filled with icy bodies and dwarf planets. Even farther is the Oort Cloud, a distant and mysterious area where long-period comets originate. The entire solar system is located in the Milky Way galaxy and moves through space at an incredible speed.
+
+The Sun's immense gravity keeps everything in orbit, providing the necessary energy for life on Earth. The solar system is constantly changing, with celestial bodies moving in their paths, sometimes colliding, and evolving over time. Scientists continue to explore and study it, uncovering new mysteries about its past, present, and future.
+		</h3>
+	</div>
+</body>
+</html>
